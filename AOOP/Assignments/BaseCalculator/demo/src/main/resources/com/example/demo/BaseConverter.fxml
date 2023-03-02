@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.BaseController">
+   <children>
+      <TextField fx:id="Input_Screen" alignment="CENTER" prefHeight="93.0" prefWidth="600.0" promptText="Enter a decimal number here">
+         <VBox.margin>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </VBox.margin>
+      </TextField>
+      <Label fx:id="Output_Screen" alignment="CENTER" contentDisplay="CENTER" prefHeight="116.0" prefWidth="600.0" text="No Input" textFill="#0f7547">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <GridPane alignment="CENTER" prefHeight="234.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <Button fx:id="Binary_Convertion_btn" mnemonicParsing="false" onAction="#binaryFun" prefHeight="79.0" prefWidth="299.0" text="B" textFill="#031014">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="2.0" top="1.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="Hex_Convertion_btn" mnemonicParsing="false" onAction="#HexFun" prefHeight="79.0" prefWidth="299.0" text="H" textFill="#031014" GridPane.columnIndex="1">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="2.0" top="1.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="Octal_Convertion" mnemonicParsing="false" onAction="#OctalFun" prefHeight="79.0" prefWidth="299.0" text="O" textFill="#031014" GridPane.rowIndex="1">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="2.0" top="1.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="Next_Srceen_btn" mnemonicParsing="false" onAction="#NextScreenFun" prefHeight="79.0" prefWidth="299.0" text="Next Screen" textFill="#031014" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="2.0" top="1.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="Exit_btn" mnemonicParsing="false" onAction="#ExitFun" prefHeight="79.0" prefWidth="299.0" text="Exit" textFill="#031014" GridPane.rowIndex="2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="1.0" right="2.0" top="1.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="Clear_btn" mnemonicParsing="false" onAction="#ClearFun" prefHeight="79.0" prefWidth="299.0" text="Clear" textFill="#031014" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="1.0" left="2.0" top="1.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</VBox>
